@@ -14,7 +14,7 @@
     <groupId>com.bs23</groupId>
     <artifactId>nafizultravelagency</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>travelagencynetwork</name>
+    <name>travelagency</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

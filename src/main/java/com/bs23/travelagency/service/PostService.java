@@ -1,6 +1,8 @@
 package com.bs23.travelagency.service;
 
 import com.bs23.travelagency.dto.StatusDTO;
+import com.bs23.travelagency.dto.UserPostDTO;
+import com.bs23.travelagency.entity.Status;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;

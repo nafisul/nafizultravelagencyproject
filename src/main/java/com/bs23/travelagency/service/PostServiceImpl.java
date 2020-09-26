@@ -2,6 +2,10 @@ package com.bs23.travelagency.service;
 
 import com.bs23.travelagency.dto.StatusDTO;
 import com.bs23.travelagency.dto.UserPostDTO;
+import com.bs23.travelagency.entity.Location;
+import com.bs23.travelagency.entity.Status;
+import com.bs23.travelagency.entity.User;
+import com.bs23.travelagency.repository.PostRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +19,7 @@ import java.util.List;
  * Created by nafizul.islam on 9/26/2020.
  */
 @Service
-public class PostServiceImpl implements PostService{
-
+public class PostServiceImpl implements PostService {
 
     private static final Logger logger = LogManager.getLogger(PostServiceImpl.class);
 
@@ -68,11 +71,6 @@ public class PostServiceImpl implements PostService{
     @Override
     public Status findById(Long postId) {
         return postRepository.findById(postId).get();
-    }
-
-    @Override
-    public void updatePost(StatusDTO statusDTO, HttpServletRequest request) {
-
     }
 
     @Override

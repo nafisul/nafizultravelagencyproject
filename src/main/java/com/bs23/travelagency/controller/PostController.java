@@ -2,6 +2,7 @@ package com.bs23.travelagency.controller;
 
 import com.bs23.travelagency.dto.StatusDTO;
 import com.bs23.travelagency.dto.UserPostDTO;
+import com.bs23.travelagency.entity.Status;
 import com.bs23.travelagency.service.LocationService;
 import com.bs23.travelagency.entity.Location;
 import com.bs23.travelagency.service.PostService;
@@ -16,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.xml.stream.Location;
 import java.util.List;
 
 /**
@@ -24,7 +24,6 @@ import java.util.List;
  */
 @Controller
 public class PostController {
-
     private static final Logger logger = LogManager.getLogger(PostController.class);
 
     @Autowired
@@ -41,11 +40,10 @@ public class PostController {
         return "welcome";
     }
 
-
     @GetMapping("/newPost")
     public String newPost(Model model){
         logger.info("new post controller");
-        List<com.bs23.travelagency.entity.Location> locationList = locationService.getAllLocation();
+        List<Location> locationList = locationService.getAllLocation();
         model.addAttribute("locationList",locationList);
         return "newPost";
     }
@@ -135,4 +133,5 @@ public class PostController {
 
         model.addAttribute("postId",statusDTO.getPostId());
         return "changePrivacy";
-    }}
+    }
+}
