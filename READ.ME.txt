@@ -5,3 +5,8 @@ Please read the following steps to run the application
     Import the databse backup provided in root folder for your ease (location & role table data are already provided for testing purpose), otherwise this data has to be put by your own
     Change the database name with newly created one in application.properties file as well as change MySQL username & password(if required)
     Now Build and Run the application
+
+
+Email & Password for the provided DB
+
+Email: nafis2310@gmail.com | Password: 1234
