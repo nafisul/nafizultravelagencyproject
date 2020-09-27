@@ -7,8 +7,7 @@ import java.util.Date;
 /**
  * Created by nafizul.islam on 9/26/2020.
  */
-@Entity
-@Table(name = "user_status")
+
 public class StatusDTO {
 
     private Long postId;

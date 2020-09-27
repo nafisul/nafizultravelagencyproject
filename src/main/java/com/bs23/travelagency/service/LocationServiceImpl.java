@@ -18,7 +18,7 @@ public class LocationServiceImpl implements LocationService {
     private static final Logger logger = LogManager.getLogger(LocationServiceImpl.class);
 
     @Autowired
-   private LocationRepository locationRepository;
+    private LocationRepository locationRepository;
 
     @Override
     public List<Location> getAllLocation() {

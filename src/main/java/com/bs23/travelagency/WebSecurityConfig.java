@@ -1,4 +1,4 @@
-package com.bs23.travelagency.validator;
+package com.bs23.travelagency;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -14,7 +14,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 /**
  * Created by nafizul.islam on 9/27/2020.
- */@Configuration
+ */
+    @Configuration
    @EnableWebSecurity
    public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
